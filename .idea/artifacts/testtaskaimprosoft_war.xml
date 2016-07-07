@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="testtaskaimprosoft:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="testtaskaimprosoft-1.0.war">
+      <element id="artifact" artifact-name="testtaskaimprosoft:war exploded" />
+    </root>
+  </artifact>
+</component>

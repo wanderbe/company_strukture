@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+
+
+    <servlet>
+        <servlet-name>addDepartmentServlet</servlet-name>
+        <servlet-class>servlets.DepartmentAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addDepartmentServlet</servlet-name>
+        <url-pattern>/adddepartment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateDepartmentServlet</servlet-name>
+        <servlet-class>servlets.DepartmentUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateDepartmentServlet</servlet-name>
+        <url-pattern>/updatedepartment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteDepartmentServlet</servlet-name>
+        <servlet-class>servlets.DepartmentDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteDepartmentServlet</servlet-name>
+        <url-pattern>/deletedepartment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>departmentsListByWorkerServlet</servlet-name>
+        <servlet-class>servlets.DepartmentsListByWorkerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>departmentsListByWorkerServlet</servlet-name>
+        <url-pattern>/departmentslist</url-pattern>
+    </servlet-mapping>
+
+    <!-- WORKERS -->
+
+    <servlet>
+        <servlet-name>workersListByDepartmentServlet</servlet-name>
+        <servlet-class>servlets.WorkersListByDepartmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>workersListByDepartmentServlet</servlet-name>
+        <url-pattern>/workerslist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateWorkerServlet</servlet-name>
+        <servlet-class>servlets.WorkerUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateWorkerServlet</servlet-name>
+        <url-pattern>/updateworker</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addWorkerServlet</servlet-name>
+        <servlet-class>servlets.WorkerAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addWorkerServlet</servlet-name>
+        <url-pattern>/addworker</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteWorkerServlet</servlet-name>
+        <servlet-class>servlets.WorkerDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteWorkerServlet</servlet-name>
+        <url-pattern>/deleteworker</url-pattern>
+    </servlet-mapping>
+
+    <!-- Index -->
+
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>servlets.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>first</welcome-file>
+    </welcome-file-list>
+</web-app>
